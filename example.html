@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Work</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+.box.mask {
+    --size: 50px;
+  --p: 25px;
+  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+  
+  height: 150px;
+
+  -webkit-mask:
+    radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)),purple 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(-1*var(--p)),#0000 99%,purple 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+  background:linear-gradient(90deg,purple,purple);  
+  border: none;
+}
+.button {
+background-color:purple;
+width: 110px;
+}
+.button1 {
+    border:3px solid purple;
+    border-radius: 10px;
+}
+.text {
+    color:purple;
+}
+.onn {
+    background-color: purple;
+}
+.errspan {
+        float:left;
+        margin-left: 4px;
+        margin-top: -26px;
+        position: relative;
+        z-index: 2;
+    }
+    .fa-comments-o {
+       background-color: purple;
+       border-radius: 50%;
+       width: 70px;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container-fluid">
+          <a class="mx-5 navbar-brand" href="#"> <b> Ship<span class="text ">mate.</span></b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+      <div>
+            <form class="d-flex justify-content-end">
+                <button class="btn button text-white rounded-3 border" type="submit"> Login </button> 
+              <button class="btn button1 mx-4" type="submit">Learn more</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid  py-5">
+        <h3 class="pt-2 text-center"> Hassle-Free Shipping Solutions </h3>
+        <p class="text-center ">Compare, book, and manage your frieght across the world's top logistics provider's, all on one platform.</p>
+      </div>
+      <div class="container p-2 bg-white">
+        <div class="row">
+            <div class="col-3"><input type="text" class="form-control" placeholder=" Origin, Port, City"><span class="fa fa-map-marker errspan"></span></div>
+           <div class="col-3"> <input type="text" class="form-control " placeholder=" Destination, Port, City"><span class="fa fa-map-marker errspan"></span></div>
+           <div class="col-3"> <input type="text" class="form-control" placeholder="  13 April 2023"><span class="fa fa-calendar-o errspan"></span></div>
+          <div class="col-2">  <input type="text" class="form-control" placeholder="  Load"><span class="fa fa-ship errspan"></span></div>
+            <div class="col-1"><button type="submit" class="btn border-dark onn"><i class="fa fa-arrow-right text-white" aria-hidden="true"></i></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <h3 class="text-center pt-5 pb-3">Services</h3>
+        <div class="row">
+            <div class="col-3">
+        <div class="card rounded-3">
+            <div class="card-header">
+                <h4 class="text-center"><span class="h5"> <i class="fa fa-ship" aria-hidden="true"></i></span>Freight Services</h4>
+            </div>
+            <div class="card-body">
+                <p>Open new opportunites to grow your busniess. Enter new markets and discover new contitnents, We are with you, door-to-door.</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card rounded-3">
+                <div class="card-header ">
+                   
+                    <h4 class="text-center"><span class="h5"> <i class="fa fa-briefcase" aria-hidden="true"></i></span> Business Services</h4>
+                </div>
+                <div class="card-body">
+                    <p>We support your goals for growth with cargo insurance, online payments and paperless workflow. Take your business to the next level.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card rounded-3">
+                    <div class="card-header ">
+                       
+                        <h4 class="text-center"><span class="h5"> <i class="fa fa-bandcamp" aria-hidden="true"></i></span> Shipping & Logistics</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>Find powerful solutions to meet your diverse transportation needs. Agile solutions to handle all your supply chain needs.</p>
+                    </div>
+                </div>
+                </div>      
+
+                <div class="col-3">
+                    <div class="card rounded-3">
+                        <div class="card-header ">
+                           
+                            <h4 class="text-center"><span class="h5"> <i class="fa fa-cogs" aria-hidden="true"></i></span> 24/7 Support</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Receive support from our experts all over the world at every stage of the process, 24/7.</p><br>
+                        </div>
+                    </div>
+                    </div>      
+    
+        </div>
+        <div class="d-flex justify-content-end px-5 text-white"> <i class="fa fa-comments-o h1 text-center " aria-hidden="true"></i></div>
+    </div>
+    <div class="box mask"></div>
+</body>
+</html>
